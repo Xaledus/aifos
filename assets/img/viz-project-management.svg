@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" width="640" height="440">
+  <title>Diagramme abstrait : jalons, dépendances et gouvernance de programme</title>
+  <defs>
+    <pattern id="pmDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1" fill="#D8DDE2"/>
+    </pattern>
+  </defs>
+
+  <rect width="640" height="440" fill="#FFFFFF"/>
+  <rect width="640" height="440" fill="url(#pmDots)"/>
+  <rect x="0.5" y="0.5" width="639" height="439" fill="none" stroke="#D8DDE2"/>
+
+  <!-- Couloirs -->
+  <g stroke="#D8DDE2" stroke-width="1">
+    <path d="M56 116h528M56 196h528M56 276h528M56 356h528"/>
+  </g>
+  <g fill="#747B82" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.6">
+    <text x="56" y="106">GOUVERNANCE</text>
+    <text x="56" y="186">MÉTIERS</text>
+    <text x="56" y="266">DATA</text>
+    <text x="56" y="346">TECHNOLOGIE</text>
+  </g>
+
+  <!-- Axe des jalons -->
+  <path d="M56 400h528" stroke="#2E4B63" stroke-width="1"/>
+  <g fill="#2E4B63" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.4">
+    <text x="56"  y="420">T1</text>
+    <text x="188" y="420">T2</text>
+    <text x="320" y="420">T3</text>
+    <text x="452" y="420">T4</text>
+  </g>
+  <g stroke="#D8DDE2">
+    <path d="M56 396v8M188 396v8M320 396v8M452 396v8M584 396v8"/>
+  </g>
+
+  <!-- Barres de charge -->
+  <g>
+    <rect x="56"  y="128" width="184" height="14" fill="#132F45"/>
+    <rect x="120" y="208" width="228" height="14" fill="#2E4B63"/>
+    <rect x="216" y="288" width="252" height="14" fill="#2E4B63"/>
+    <rect x="352" y="368" width="196" height="14" fill="#132F45"/>
+    <rect x="264" y="128" width="120" height="14" fill="#C8A96A"/>
+  </g>
+
+  <!-- Dépendances -->
+  <g fill="none" stroke="#C8A96A" stroke-width="1.2">
+    <path d="M240 135C284 135 300 176 320 208"/>
+    <path d="M348 215C392 215 400 254 420 288"/>
+    <path d="M468 295C520 295 508 336 468 368"/>
+  </g>
+  <g fill="#C8A96A">
+    <circle cx="320" cy="208" r="3.2"/>
+    <circle cx="420" cy="288" r="3.2"/>
+    <circle cx="468" cy="368" r="3.2"/>
+  </g>
+
+  <!-- Jalons -->
+  <g>
+    <path d="M188 44l11 11-11 11-11-11z" fill="#C8A96A"/>
+    <path d="M386 44l11 11-11 11-11-11z" fill="#C8A96A"/>
+    <path d="M548 44l11 11-11 11-11-11z" fill="#132F45"/>
+    <g stroke="#D8DDE2" stroke-dasharray="3 4">
+      <path d="M188 70v322M386 70v322M548 70v322"/>
+    </g>
+  </g>
+</svg>

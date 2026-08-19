@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620" role="img" width="800" height="620">
+  <title>Composition abstraite : architecture et flux de données</title>
+  <defs>
+    <linearGradient id="hSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#132F45"/>
+      <stop offset="100%" stop-color="#0B2135"/>
+    </linearGradient>
+    <linearGradient id="hFade" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#081D2D" stop-opacity=".95"/>
+      <stop offset="60%" stop-color="#081D2D" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="hDots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#2E4B63" fill-opacity=".55"/>
+    </pattern>
+    <clipPath id="hClip"><rect width="800" height="620" rx="2"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#hClip)">
+    <rect width="800" height="620" fill="url(#hSky)"/>
+    <rect width="800" height="620" fill="url(#hDots)"/>
+
+    <!-- Volumes d'architecture -->
+    <g fill="#0E2739">
+      <rect x="48"  y="286" width="86"  height="334"/>
+      <rect x="150" y="212" width="104" height="408"/>
+      <rect x="270" y="330" width="74"  height="290"/>
+      <rect x="360" y="164" width="118" height="456"/>
+      <rect x="494" y="268" width="92"  height="352"/>
+      <rect x="602" y="216" width="128" height="404"/>
+    </g>
+    <g fill="none" stroke="#2E4B63" stroke-opacity=".7" stroke-width="1">
+      <rect x="48.5"  y="286.5" width="85"  height="333"/>
+      <rect x="150.5" y="212.5" width="103" height="407"/>
+      <rect x="270.5" y="330.5" width="73"  height="289"/>
+      <rect x="360.5" y="164.5" width="117" height="455"/>
+      <rect x="494.5" y="268.5" width="91"  height="351"/>
+      <rect x="602.5" y="216.5" width="127" height="403"/>
+    </g>
+
+    <!-- Trames de façade -->
+    <g stroke="#2E4B63" stroke-opacity=".38" stroke-width="1">
+      <path d="M48 320h86M48 354h86M48 388h86M48 422h86M48 456h86M48 490h86M48 524h86M48 558h86"/>
+      <path d="M150 246h104M150 280h104M150 314h104M150 348h104M150 382h104M150 416h104M150 450h104M150 484h104M150 518h104M150 552h104"/>
+      <path d="M270 364h74M270 398h74M270 432h74M270 466h74M270 500h74M270 534h74M270 568h74"/>
+      <path d="M360 198h118M360 232h118M360 266h118M360 300h118M360 334h118M360 368h118M360 402h118M360 436h118M360 470h118M360 504h118M360 538h118M360 572h118"/>
+      <path d="M494 302h92M494 336h92M494 370h92M494 404h92M494 438h92M494 472h92M494 506h92M494 540h92M494 574h92"/>
+      <path d="M602 250h128M602 284h128M602 318h128M602 352h128M602 386h128M602 420h128M602 454h128M602 488h128M602 522h128M602 556h128"/>
+    </g>
+
+    <!-- Quelques fenêtres éclairées, touche chaude compatible avec l'or -->
+    <g fill="#C8A96A" fill-opacity=".5">
+      <rect x="168" y="252" width="14" height="20"/>
+      <rect x="212" y="320" width="14" height="20"/>
+      <rect x="392" y="238" width="14" height="20"/>
+      <rect x="436" y="374" width="14" height="20"/>
+      <rect x="518" y="342" width="14" height="20"/>
+      <rect x="654" y="290" width="14" height="20"/>
+      <rect x="690" y="460" width="14" height="20"/>
+      <rect x="86"  y="428" width="14" height="20"/>
+    </g>
+
+    <rect y="380" width="800" height="240" fill="url(#hFade)"/>
+
+    <!-- Trajectoires de flux de données -->
+    <g fill="none" stroke-linecap="round">
+      <path d="M-20 468C120 468 176 300 322 300S560 172 700 172s130 0 140 0"
+            stroke="#C8A96A" stroke-opacity=".85" stroke-width="1.4"/>
+      <path d="M-20 520C140 520 214 372 366 372s232-118 454-118"
+            stroke="#C8A96A" stroke-opacity=".38" stroke-width="1"/>
+      <path d="M-20 416C104 416 150 236 286 236s214-92 534-92"
+            stroke="#FFFFFF" stroke-opacity=".16" stroke-width="1"/>
+    </g>
+
+    <!-- Nœuds -->
+    <g>
+      <circle cx="322" cy="300" r="4.5" fill="#C8A96A"/>
+      <circle cx="322" cy="300" r="10" fill="none" stroke="#C8A96A" stroke-opacity=".45"/>
+      <circle cx="700" cy="172" r="3.5" fill="#C8A96A"/>
+      <circle cx="366" cy="372" r="3" fill="#C8A96A" fill-opacity=".7"/>
+      <circle cx="286" cy="236" r="3" fill="#FFFFFF" fill-opacity=".5"/>
+    </g>
+
+    <!-- Cadre rectiligne discret -->
+    <rect x="24.5" y="24.5" width="751" height="571" fill="none"
+          stroke="#FFFFFF" stroke-opacity=".08"/>
+    <path d="M24 88h56M24 24v56" stroke="#C8A96A" stroke-opacity=".85" stroke-width="2" fill="none"/>
+  </g>
+</svg>

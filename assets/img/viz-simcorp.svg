@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" role="img" width="640" height="500">
+  <title>Composition abstraite : données, flux et interfaces d’un système d’investissement</title>
+  <defs>
+    <linearGradient id="scBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0E2739"/>
+      <stop offset="100%" stop-color="#081D2D"/>
+    </linearGradient>
+    <pattern id="scDots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1" fill="#2E4B63" fill-opacity=".55"/>
+    </pattern>
+    <radialGradient id="scGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C8A96A" stop-opacity=".18"/>
+      <stop offset="100%" stop-color="#C8A96A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="500" fill="url(#scBg)"/>
+  <rect width="640" height="500" fill="url(#scDots)"/>
+  <rect x="0.5" y="0.5" width="639" height="499" fill="none" stroke="#FFFFFF" stroke-opacity=".08"/>
+
+  <circle cx="320" cy="250" r="180" fill="url(#scGlow)"/>
+
+  <!-- Anneaux -->
+  <g fill="none" stroke="#2E4B63">
+    <circle cx="320" cy="250" r="86"/>
+    <circle cx="320" cy="250" r="142" stroke-dasharray="2 6"/>
+    <circle cx="320" cy="250" r="196" stroke-opacity=".55"/>
+  </g>
+
+  <!-- Coeur : le systeme -->
+  <rect x="264" y="206" width="112" height="88" fill="#132F45" stroke="#C8A96A"/>
+  <g stroke="#2E4B63">
+    <path d="M264 236h112M264 264h112"/>
+  </g>
+  <g fill="#FFFFFF" fill-opacity=".3">
+    <rect x="278" y="218" width="40" height="6"/>
+    <rect x="278" y="246" width="62" height="6"/>
+    <rect x="278" y="274" width="48" height="6"/>
+  </g>
+
+  <!-- Noeuds peripheriques -->
+  <g>
+    <g>
+      <rect x="256" y="72" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="320" y="98" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">DATA</text>
+    </g>
+    <g>
+      <rect x="452" y="180" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="516" y="206" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">INTERFACES</text>
+    </g>
+    <g>
+      <rect x="452" y="292" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="516" y="318" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">REPORTING</text>
+    </g>
+    <g>
+      <rect x="60" y="180" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="124" y="206" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">DATA FLOWS</text>
+    </g>
+    <g>
+      <rect x="60" y="292" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="124" y="318" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">DFS</text>
+    </g>
+    <g>
+      <rect x="256" y="392" width="128" height="42" fill="#132F45" stroke="#2E4B63"/>
+      <text x="320" y="418" font-family="Inter, sans-serif" font-size="11" letter-spacing="1.6"
+            fill="#C8A96A" text-anchor="middle">DATA WAREHOUSE</text>
+    </g>
+  </g>
+
+  <!-- Liaisons -->
+  <g fill="none" stroke="#C8A96A" stroke-opacity=".7" stroke-width="1.2">
+    <path d="M320 114v92"/>
+    <path d="M452 201C420 201 396 214 376 224"/>
+    <path d="M452 313C420 313 396 300 376 288"/>
+    <path d="M188 201C220 201 244 214 264 224"/>
+    <path d="M188 313C220 313 244 300 264 288"/>
+    <path d="M320 392v-98"/>
+  </g>
+  <g fill="#C8A96A">
+    <circle cx="320" cy="206" r="3"/><circle cx="376" cy="224" r="3"/>
+    <circle cx="376" cy="288" r="3"/><circle cx="264" cy="224" r="3"/>
+    <circle cx="264" cy="288" r="3"/><circle cx="320" cy="294" r="3"/>
+  </g>
+
+  <!-- Cadre d'angle -->
+  <path d="M24 84h56M24 24v60" stroke="#C8A96A" stroke-opacity=".8" stroke-width="2" fill="none"/>
+  <path d="M616 416h-56M616 476v-60" stroke="#C8A96A" stroke-opacity=".8" stroke-width="2" fill="none"/>
+</svg>

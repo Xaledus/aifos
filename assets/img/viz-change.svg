@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 440" role="img" width="640" height="440">
+  <title>Schéma abstrait : organisation, processus et courbe d’adoption</title>
+  <defs>
+    <pattern id="chDots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1" fill="#D8DDE2"/>
+    </pattern>
+    <linearGradient id="chFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C8A96A" stop-opacity=".22"/>
+      <stop offset="100%" stop-color="#C8A96A" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="440" fill="#FFFFFF"/>
+  <rect width="640" height="440" fill="url(#chDots)"/>
+  <rect x="0.5" y="0.5" width="639" height="439" fill="none" stroke="#D8DDE2"/>
+
+  <!-- Organisation : noeuds et liens -->
+  <g font-family="Inter, sans-serif" font-size="10" letter-spacing="1.5" fill="#747B82">
+    <text x="48" y="52">ORGANISATION</text>
+  </g>
+  <g fill="none" stroke="#D8DDE2" stroke-width="1">
+    <path d="M136 96v40M136 96h-64v40M136 96h64v40M72 136v44M136 136v44M200 136v44"/>
+    <path d="M72 180h128"/>
+  </g>
+  <g>
+    <circle cx="136" cy="90" r="9" fill="#132F45"/>
+    <circle cx="72"  cy="142" r="7" fill="#2E4B63"/>
+    <circle cx="136" cy="142" r="7" fill="#2E4B63"/>
+    <circle cx="200" cy="142" r="7" fill="#2E4B63"/>
+    <circle cx="72"  cy="186" r="5" fill="#C8A96A"/>
+    <circle cx="136" cy="186" r="5" fill="#C8A96A"/>
+    <circle cx="200" cy="186" r="5" fill="#C8A96A"/>
+  </g>
+
+  <!-- Processus : avant / apres -->
+  <g font-family="Inter, sans-serif" font-size="10" letter-spacing="1.5" fill="#747B82">
+    <text x="48" y="256">PROCESSUS</text>
+  </g>
+  <g fill="none" stroke="#D8DDE2" stroke-width="1">
+    <path d="M48 288h44v28h44v-28h44v28h44"/>
+  </g>
+  <g fill="#D8DDE2">
+    <rect x="44" y="284" width="8" height="8"/><rect x="88" y="312" width="8" height="8"/>
+    <rect x="132" y="284" width="8" height="8"/><rect x="176" y="312" width="8" height="8"/>
+    <rect x="220" y="284" width="8" height="8"/>
+  </g>
+  <g fill="none" stroke="#C8A96A" stroke-width="1.4">
+    <path d="M48 364h176"/>
+  </g>
+  <g fill="#C8A96A">
+    <rect x="44" y="360" width="8" height="8"/><rect x="132" y="360" width="8" height="8"/>
+    <rect x="220" y="360" width="8" height="8"/>
+  </g>
+  <text x="48" y="392" font-family="Inter, sans-serif" font-size="10" letter-spacing="1.2" fill="#2E4B63">
+    OPTIMISATION
+  </text>
+
+  <!-- Courbe d'adoption -->
+  <g font-family="Inter, sans-serif" font-size="10" letter-spacing="1.5" fill="#747B82">
+    <text x="316" y="52">ADOPTION</text>
+  </g>
+  <rect x="316" y="72" width="276" height="292" fill="#FFFFFF" stroke="#D8DDE2"/>
+  <g stroke="#F2F4F6">
+    <path d="M316 130h276M316 188h276M316 246h276M316 304h276"/>
+  </g>
+
+  <path d="M340 336C400 336 408 300 440 250s52-108 96-128v178z" fill="url(#chFill)"/>
+  <path d="M340 336C400 336 408 300 440 250s52-108 96-128" fill="none"
+        stroke="#C8A96A" stroke-width="2"/>
+
+  <!-- Trajectoire sans accompagnement -->
+  <path d="M340 336c60 0 72-14 96-26s60-14 100-12" fill="none"
+        stroke="#D8DDE2" stroke-width="1.4" stroke-dasharray="4 5"/>
+
+  <g fill="#C8A96A">
+    <circle cx="440" cy="250" r="4"/>
+    <circle cx="536" cy="122" r="4.5"/>
+  </g>
+  <circle cx="536" cy="122" r="10" fill="none" stroke="#C8A96A" stroke-opacity=".45"/>
+
+  <path d="M340 72v264h236" fill="none" stroke="#2E4B63" stroke-width="1"/>
+  <g font-family="Inter, sans-serif" font-size="9" letter-spacing="1.2" fill="#747B82">
+    <text x="340" y="356">MISE EN SERVICE</text>
+    <text x="592" y="356" text-anchor="end">USAGE RÉEL</text>
+  </g>
+
+  <text x="316" y="404" font-family="Playfair Display, Georgia, serif" font-size="17" fill="#132F45">
+    Une transformation réussie
+  </text>
+  <text x="316" y="426" font-family="Playfair Display, Georgia, serif" font-size="17" fill="#132F45">
+    est une transformation adoptée.
+  </text>
+</svg>

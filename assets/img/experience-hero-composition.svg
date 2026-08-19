@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" preserveAspectRatio="xMidYMid slice"
+     role="img" width="1600" height="700">
+  <title>Composition abstraite : architecture de bureaux et trajectoires de données</title>
+  <defs>
+    <linearGradient id="ehBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0E2739"/>
+      <stop offset="100%" stop-color="#081D2D"/>
+    </linearGradient>
+    <pattern id="ehDots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#2E4B63" fill-opacity=".45"/>
+    </pattern>
+  </defs>
+
+  <rect width="1600" height="700" fill="url(#ehBg)"/>
+  <rect width="1600" height="700" fill="url(#ehDots)"/>
+
+  <!-- Trames de facades -->
+  <g fill="#0B2135">
+    <rect x="60"   y="240" width="180" height="460"/>
+    <rect x="280"  y="160" width="150" height="540"/>
+    <rect x="470"  y="300" width="200" height="400"/>
+    <rect x="710"  y="120" width="170" height="580"/>
+    <rect x="920"  y="260" width="220" height="440"/>
+    <rect x="1180" y="180" width="160" height="520"/>
+    <rect x="1380" y="320" width="180" height="380"/>
+  </g>
+  <g stroke="#2E4B63" stroke-opacity=".42" stroke-width="1" fill="none">
+    <path d="M60 280h180M60 320h180M60 360h180M60 400h180M60 440h180M60 480h180M60 520h180M60 560h180M60 600h180M60 640h180"/>
+    <path d="M280 200h150M280 240h150M280 280h150M280 320h150M280 360h150M280 400h150M280 440h150M280 480h150M280 520h150M280 560h150M280 600h150M280 640h150"/>
+    <path d="M470 340h200M470 380h200M470 420h200M470 460h200M470 500h200M470 540h200M470 580h200M470 620h200M470 660h200"/>
+    <path d="M710 160h170M710 200h170M710 240h170M710 280h170M710 320h170M710 360h170M710 400h170M710 440h170M710 480h170M710 520h170M710 560h170M710 600h170M710 640h170"/>
+    <path d="M920 300h220M920 340h220M920 380h220M920 420h220M920 460h220M920 500h220M920 540h220M920 580h220M920 620h220M920 660h220"/>
+    <path d="M1180 220h160M1180 260h160M1180 300h160M1180 340h160M1180 380h160M1180 420h160M1180 460h160M1180 500h160M1180 540h160M1180 580h160M1180 620h160M1180 660h160"/>
+    <path d="M1380 360h180M1380 400h180M1380 440h180M1380 480h180M1380 520h180M1380 560h180M1380 600h180M1380 640h180"/>
+  </g>
+  <g stroke="#2E4B63" stroke-opacity=".3" stroke-width="1" fill="none">
+    <path d="M120 240v460M180 240v460M330 160v540M380 160v540M530 300v400M600 300v400M760 120v580M830 120v580M980 260v440M1060 260v440M1230 180v520M1290 180v520M1440 320v380M1500 320v380"/>
+  </g>
+
+  <!-- Fenetres eclairees -->
+  <g fill="#C8A96A" fill-opacity=".42">
+    <rect x="128" y="404" width="18" height="26"/>
+    <rect x="338" y="284" width="18" height="26"/>
+    <rect x="540" y="464" width="18" height="26"/>
+    <rect x="768" y="204" width="18" height="26"/>
+    <rect x="838" y="524" width="18" height="26"/>
+    <rect x="988" y="384" width="18" height="26"/>
+    <rect x="1238" y="264" width="18" height="26"/>
+    <rect x="1448" y="484" width="18" height="26"/>
+  </g>
+
+  <!-- Trajectoires -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M-40 560C220 560 320 380 620 380s420-160 1060-160"
+          stroke="#C8A96A" stroke-opacity=".7" stroke-width="1.6"/>
+    <path d="M-40 630C260 630 400 470 760 470s500-190 920-190"
+          stroke="#C8A96A" stroke-opacity=".28" stroke-width="1"/>
+    <path d="M-40 480C180 480 280 300 560 300s480-140 1120-140"
+          stroke="#FFFFFF" stroke-opacity=".12" stroke-width="1"/>
+  </g>
+  <g fill="#C8A96A">
+    <circle cx="620" cy="380" r="5"/>
+    <circle cx="760" cy="470" r="3.5" fill-opacity=".7"/>
+  </g>
+  <circle cx="620" cy="380" r="12" fill="none" stroke="#C8A96A" stroke-opacity=".4"/>
+</svg>

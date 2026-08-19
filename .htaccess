@@ -1,0 +1,65 @@
+# =========================================================================
+# AIFOS — configuration Apache (Hostinger)
+# Ignoré si le site est servi par GitHub Pages : sans effet, sans risque.
+# =========================================================================
+
+# ----- Page d'erreur -----
+ErrorDocument 404 /404.html
+
+# ----- Fichier d'index -----
+DirectoryIndex index.html
+
+# ----- HTTPS + www : une seule URL canonique -----
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # force HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^(.*)$ https://www.aifos.com/$1 [R=301,L]
+
+  # force le sous-domaine www (les canonical du site pointent sur www)
+  RewriteCond %{HTTP_HOST} !^www\. [NC]
+  RewriteRule ^(.*)$ https://www.aifos.com/$1 [R=301,L]
+</IfModule>
+
+# ----- Compression -----
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ----- Cache navigateur -----
+<IfModule mod_expires.c>
+  ExpiresActive On
+  # les images et polices sont versionnées par leur nom de fichier
+  ExpiresByType image/webp              "access plus 1 year"
+  ExpiresByType image/png               "access plus 1 year"
+  ExpiresByType image/jpeg              "access plus 1 year"
+  ExpiresByType image/svg+xml           "access plus 1 year"
+  ExpiresByType image/x-icon            "access plus 1 year"
+  # CSS et JS : une semaine, à purger lors d'une refonte
+  ExpiresByType text/css                "access plus 1 week"
+  ExpiresByType application/javascript  "access plus 1 week"
+  # le HTML doit rester frais
+  ExpiresByType text/html               "access plus 0 seconds"
+</IfModule>
+
+# ----- En-têtes de sécurité -----
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ----- Types MIME -----
+<IfModule mod_mime.c>
+  AddType image/webp .webp
+</IfModule>
+
+# ----- Protection des fichiers de travail -----
+<FilesMatch "^(README\.md|_.*|\.htaccess)$">
+  Require all denied
+</FilesMatch>
