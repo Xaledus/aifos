@@ -15,11 +15,11 @@ DirectoryIndex index.html
 
   # force HTTPS
   RewriteCond %{HTTPS} !=on
-  RewriteRule ^(.*)$ https://www.aifos.com/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://www.aifos.fr/$1 [R=301,L]
 
   # force le sous-domaine www (les canonical du site pointent sur www)
   RewriteCond %{HTTP_HOST} !^www\. [NC]
-  RewriteRule ^(.*)$ https://www.aifos.com/$1 [R=301,L]
+  RewriteRule ^(.*)$ https://www.aifos.fr/$1 [R=301,L]
 </IfModule>
 
 # ----- Compression -----
